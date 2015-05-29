@@ -60,6 +60,7 @@
         android:clickable="true"
         android:background="@drawable/ripple_blue_circle"
         android:src="@drawable/ripple_blue_circle"
+        android:elevation="5dp"
          />
 
 
