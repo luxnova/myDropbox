@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mobiquity.com.mydropox.activities.LoginActivity"
+    android:background="@android:color/white">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bg_view"
+        android:layout_centerHorizontal="true"
+        android:background="@color/blue"
+        android:transitionName="@string/bg_view"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:id="@+id/icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:transitionName="@string/icon"
+        android:layout_marginTop="@dimen/icon_top_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:id="@+id/splash_title"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:transitionName="@string/splash_title"
+        android:layout_marginTop="10dp" />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_button"
+        android:transitionName="@string/login"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="@string/login_to_dropbox"
+        android:background="@drawable/ripple_blue_rectangle"
+        android:layout_below="@+id/bg_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="163dp" />
+
+
+</RelativeLayout>
