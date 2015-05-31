@@ -297,6 +297,9 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         else if(id == R.id.showOnMap){
+            if(mapView.getVisibility() == View.VISIBLE){
+                return false;
+            }
             map.clear();
             mapView.bringToFront();
             //Animate the mapview, not the map.
