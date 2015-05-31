@@ -1,6 +1,7 @@
 package mobiquity.com.mydropox.activities;
 
 import android.animation.Animator;
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ActivityOptions;
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView actionButton;
     private GridView gridView;
 
+    @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
             Utils.setStatusBarColor(this, R.color.dark_blue);
             setUpEnterAnimations();
         }
-
     }
 
     /**
